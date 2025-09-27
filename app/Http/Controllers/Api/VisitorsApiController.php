@@ -17,7 +17,6 @@ class VisitorsApiController extends Controller
         $visitor = new \App\Models\Visitors();
         $visitor->ip = $data['ip'];
         $visitor->country = $data['country'];
-        $visitor->city = $data['city'];
 
         try {
             $visitor->save();
