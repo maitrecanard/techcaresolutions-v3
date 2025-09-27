@@ -15,8 +15,8 @@ return new class extends Migration
             Schema::create('visitors', function (Blueprint $table) {
                 $table->id();
                 $table->string('ip');
-                $table->string('device');
-                $table->string('country');
+                $table->string('device')->nullable();
+                $table->string('country')->nullable();
                 $table->timestamps();
             });
         }

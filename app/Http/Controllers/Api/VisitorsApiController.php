@@ -12,7 +12,6 @@ class VisitorsApiController extends Controller
         $data = $request->validate([
             "ip" => "required|ip",
             "country" => "required|string",
-            "city" => "required|string",
         ]);
 
         $visitor = new \App\Models\Visitors();
