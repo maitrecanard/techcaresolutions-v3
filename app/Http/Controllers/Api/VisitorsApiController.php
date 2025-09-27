@@ -3,20 +3,16 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Request;
+use Illuminate\Http\Request;
 
 class VisitorsApiController extends Controller
 {
     public function countVisitor(Request $request)
-    {
+    {   
         $data = $request->validate([
             "ip" => "required|ip",
             "country" => "required|string",
             "city" => "required|string",
-            "latitude" => "required|numeric",
-            "longitude" => "required|numeric",
-            "timezone" => "required|string",
-            "user_agent" => "required|string"
         ]);
 
         $visitor = new \App\Models\Visitors();
