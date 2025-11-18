@@ -48,7 +48,7 @@ class VisitorsApiController extends Controller
 
         DiscordService::sendToChannel(
             'VisitorBot',
-            'visitor-industry',
+            'visitor_industry',
             "Nouveau visiteur depuis le pays : " . $data['country']
         );
         return response()->json(['message' => 'Visitor counted successfully'], 201);
