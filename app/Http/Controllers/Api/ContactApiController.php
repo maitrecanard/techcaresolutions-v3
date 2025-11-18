@@ -13,7 +13,8 @@ class ContactApiController extends Controller
        $data = $request->validate([
             "name" => "required|string",
             "email" => "required|email",
-            "message" => "required|string"
+            "message" => "required|string",
+            "entreprise" => "nullable|string"
        ]);
 
        ContactController::sendMail($data);

@@ -35,4 +35,12 @@ return [
         ],
     ],
 
+    'discord' => [
+        'visitor' => env('DISCORD_WEBHOOK_VISITOR'),
+        'visitor_industry' => env('DISCORD_WEBHOOK_VISITOR_INDUSTRY'),
+        'logs-error' => env('DISCORD_WEBHOOK_LOGS_ERROR'),
+        'stripe' => env('DISCORD_WEBHOOK_STRIPE'),
+        'logs' => env('DISCORD_WEBHOOK_LOGS'),
+    ],
+
 ];

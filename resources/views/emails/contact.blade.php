@@ -68,6 +68,7 @@
                 <ul>
             <li>Nom : {{ $data['name'] }}</li>
             <li>Email : {{ $data['email'] }}</li>
+            <li>Entreprise : {{ $data['entreprise'] ?? 'N/A' }}</li>
             <li>Message : {{ $data['message'] }}</li>
         </ul>
         </td>

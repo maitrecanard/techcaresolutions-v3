@@ -12,3 +12,4 @@ Route::get('/user', function (Request $request) {
 
 Route::post('/send-mail', [ContactApiController::class, 'sendMessage']);
 Route::post('/count-visitor', [VisitorsApiController::class, 'countVisitor']);
+Route::post('/count-visitor-industry', [VisitorsApiController::class, 'countVisitorIndustry']);
